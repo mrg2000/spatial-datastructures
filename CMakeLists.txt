@@ -11,8 +11,8 @@ include_directories(${gtest_SOURCE_DIR}/include ${gmock_SOURCE_DIR}/include)
 
 # BOOST
 # RUN brew install boost in your terminal and configure the destination files
-set(Boost_INCLUDE_DIR /usr/local/Cellar/boost/1.76.0/include)
-set(Boost_LIBRARY_DIR /usr/local/Cellar/boost/1.76.0/lib)
+set(Boost_INCLUDE_DIR /usr/local/Cellar/boost/1.75.0_2/include)
+set(Boost_LIBRARY_DIR /usr/local/Cellar/boost/1.75.0_2/lib)
 find_package(Boost COMPONENTS system filesystem REQUIRED)
 include_directories(${Boost_INCLUDE_DIR})
 # enable_testing()

@@ -21,8 +21,8 @@ private:
      *
      * @return Retorna referencia al Nodo que contiene o podría contener el punto buscado
      */
+    void range_query_aux(Rectangle region, std::shared_ptr<Node>& node_ptr, std::vector<Point>& query_result_vector);
     std::shared_ptr<Node>& search(Point target, std::shared_ptr<Node>& node);
-
 public:
     QuadTree();
     void insert(Point new_point) override;
